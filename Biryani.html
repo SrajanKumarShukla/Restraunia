@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<title>Restraunia</title>
+<link rel="icon" href="r.jpg" type="image/jpg"/>
+<style>
+
+body{margin:40px 0 0 0;
+
+	}
+
+.header{
+	position:relative;
+	box-sizing:border-box;
+	background-color:dodgerblue;
+	color:white;
+	padding:15px;
+	font-size:80px;
+	width:100%;
+	height:140px;
+	text-align:center;
+	}
+.header::first-letter{
+	font-size:100px;
+	color:black;
+	font-family:magneto;
+	}
+.img{ 
+	position:absolute;
+	height:250px;
+	width:350px;
+	top:-50px;
+	right:90px;
+	z-index:1;
+	}
+.navigation{
+	margin:0;
+	background-color:#333;
+	width:100%;
+	display:inline-block;
+	list-style-type:none;
+	padding:0px;
+	
+	}
+.navigation a{
+	color:white;
+	float:left;
+    display: inline-block;
+	padding:5px 10px;
+	margin-left:5px;
+	font-size:18px;
+	font-family:Times New Roman;
+	text-align:center;
+	text-decoration:none;
+	}
+.navigation a:hover{
+	background-color:slategray;
+	}
+.column{padding:10px;float:left;box-sizing:border-box;}
+.column.side{
+	margin-left:5px;
+	margin:0px;
+	background-color:gray;
+	font-size:20px;
+	height:100%;
+	width:15%;
+	}
+.column.side a{
+	margin-left:10px;
+	display:block;
+	color:white;
+	text-decoration:none;
+	}
+.column.side a:hover{
+	background-color:black;
+	}
+.column.main{width:85%;display:block:padding:0px;background-color:white;box-sizing:border-box;}
+.row:after{content:"";display:table;clear:both;}
+.column.main.item{display:block;width:200px;padding:0;background-color:white;margin:10px;box-shadow:0 0px 5px black;}
+.column.main.item img{width:100%;height:150px;}
+.column.main.description{background-color:white;color:black;padding:5px;width:100%;text-align:center;margin-top:0;}
+.button{
+	background-color:dodgerblue;
+	padding:10px;
+	color:white;
+	font-size:20px;
+	height:40px;
+	width:120px;
+	border:none;
+	border-radius:5px;
+	cursor:pointer;
+	}
+.button span{
+	position:relative;
+	transition:0.5s;
+	}
+.button span:after{
+	position:absolute;
+	content:'\00bb';
+	opacity:0;
+	transition:0.5s;
+	right:-25px;
+	}
+.button:hover span{
+	padding-right:25px;
+	}
+.button:hover span:after{
+	opacity:1;
+	right:0px;
+	
+	}
+    @media screen and (max-width:1000px)
+{
+    .img{position:relative;right:30px;width:720px;height:500px;margin-bottom:-150px;}
+    .navigation a{display:block;width:100%;margin: 0px;}
+    .header{height:630px;padding:0px;}
+    .header div{font-size:170px;}
+    .column{display:inline-block;}
+    .column.side{width:100%;font-size:60px;}
+    .column.main{width:100%;}
+    .column.main h1{font-size:60px;}
+    .column.main.item{width:100%;box-sizing:border-box;margin:0px 0px 30px 0px;box-shadow: 1px 1px 3px 3px black;}
+    .navigation a{font-size:80px;}
+    .button{font-size:90px;width:260px;height:130px;margin:0 0 25px 0;border-radius:25px;color:white;}
+    .column.main.item p{font-size:50px;}
+    .column.main.item span{font-size:70px;}
+    .column.main.description{padding:5px 5px 0px 5px;font-size:40px;}
+    .column.main.description a{color:white;}
+    .column.main{padding:0 35px 0 35px;}
+    .footer{font-size:50px;padding:;width:98%;}
+    .header::first-letter{
+	font-size:150px;
+	color:black;
+	font-family:magneto;
+	}
+     .column.main.item img{width:100%;height:350px;}
+    }
+.footer{width:100%;background-color:black;height:60px;color:white;text-align:center;padding:45px;box-sizing:border-box;}
+     body{min-width: 800px;}
+</style>
+</head>
+<body>
+<div class="header">
+<div>Restraunia</div>
+<img class="img" src="res.gif">
+</div>
+<div class="navigation">
+<a href="home.html" style="background-color:green;">Home</a>
+
+<a href="about us.html">About us</a>
+</div>
+<div class="row">
+<div class="column side">
+<h style="color:dodgerblue;background-color:yellow;padding:5px;margin:10px 0 10px 0;">Choose your item:</h>
+<a href="chinese.html">CHINESE</a>
+<a href="continental.html">CONTINENTAL</a>
+<a href="veg.html">VEG</a>
+<a href="Non - Veg.html">NON-VEG</a>
+<a href="Pizza.html">PIZZA</a>
+<a href="Burger.html">BURGER</a>
+<a href="Biryani.html"  style="background-color:black;">BIRYANI</a>
+<a href="Sweet.html">SWEETS</a>
+<a href="Snacks.html">SNACKS</a>
+<a href="Salad.html">SALAD</a>
+<a href="Drinks.html">DRINKS</a>
+</div>
+<div class="column main">
+<h1 style="text-align:center;color:dodgerblue;font-family:magneto"><u>Biryani</u></h1>
+<div class="column main item">
+<img src="BIRYANI/Beary Biryani.jpg">
+	<div class="column main description" margin="0">
+		<p>Beary Biryani</p>
+        <span style="font-size:25px;color:blue;">$3</span><br>
+		<a href="login.html"><button class="button"><span>Order </span></button></a>
+	</div>
+</div>
+<div class="column main item">
+<img src="BIRYANI/Bhatkali Biryani.jpg">
+	<div class="column main description">
+		<p>Bhatkali Biryani</p>
+        <span style="font-size:25px;color:blue;">$5</span><br>
+		<a href="login.html"><button class="button"><span>Order </span></button></a>
+	</div>
+</div>
+<div class="column main item">
+<img src="BIRYANI/Bombay Biryani.jpg">
+	<div class="column main description">
+		<p>Bombay Biryani</p>
+        <span style="font-size:25px;color:blue;">$2.5</span><br>
+		<a href="login.html"><button class="button"><span>Order </span></button></a>
+	</div>
+</div>
+<div class="column main item">
+<img src="BIRYANI/Calcutta Biryani.jpg">
+	<div class="column main description">
+		<p>Calcutta Biryani</p>
+        <span style="font-size:25px;color:blue;">$3</span><br>
+		<a href="login.html"><button class="button"><span>Order </span></button></a>
+	</div>
+</div>
+<div class="column main item">
+<img src="BIRYANI/Dindigul Biriyani.jpg">
+	<div class="column main description">
+		<p>Dindigul Biriyani</p>
+        <span style="font-size:25px;color:blue;">$5</span><br>
+		<a href="login.html"><button class="button"><span>Order </span></button></a>
+	</div>
+</div>
+<div class="column main item">
+<img src="BIRYANI/Hyderabadi Biryani.jpg">
+	<div class="column main description">
+		<p>Hyderabadi Biryani</p>
+        <span style="font-size:25px;color:blue;">$4.5</span><br>
+		<a href="login.html"><button class="button"><span>Order </span></button></a>
+	</div>
+</div>
+<div class="column main item">
+<img src="BIRYANI/Lucknowi Biryani.jpg">
+	<div class="column main description">
+		<p>Lucknowi Biryani</p>
+        <span style="font-size:25px;color:blue;">$3.5</span><br>
+		<a href="login.html"><button class="button"><span>Order </span></button></a>
+	</div>
+</div>
+<div class="column main item">
+<img src="BIRYANI/Malabar Biriyani.jpg">
+	<div class="column main description">
+		<p>Malabar Biriyani</p>
+        <span style="font-size:25px;color:blue;">$4</span><br>
+		<a href="login.html"><button class="button"><span>Order </span></button></a>
+	</div>
+</div>
+<div class="column main item">
+<img src="BIRYANI/Memoni Biryani.jpg">
+	<div class="column main description">
+		<p>Memoni Biryani</p>
+        <span style="font-size:25px;color:blue;">$1.5</span><br>
+		<a href="login.html"><button class="button"><span>Order </span></button></a>
+	</div>
+</div>
+<div class="column main item">
+<img src="BIRYANI/Memoni Biryani.jpg">
+	<div class="column main description">
+		<p>Memoni Biryani</p>
+        <span style="font-size:25px;color:blue;">$5</span><br>
+		<a href="login.html"><button class="button"><span>Order </span></button></a>
+	</div>
+</div>
+</div>
+</div>
+<div class="footer">@Lovely Professional University</div>
+</body>
+</html>

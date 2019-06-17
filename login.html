@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<style>
+*{box-sizing:border-box;}
+body{
+background-image:url(project5.jpg);
+background-size:100%;
+    background-repeat:no-repeat;
+}
+div
+	{
+	
+	padding:20px;
+	width:50%;
+	border-radius:7px;
+	}
+input[type=text],[type=password],select
+	{
+	width:100%;
+	padding:10px;
+	display:inline-block;
+	margin:0px 0px 20px 0px;
+	border:1px solid black;
+	border-radius:5px;
+	box-sizing:border-box;
+	}
+lebel{margin-bottom:0px;}
+input[type=submit]
+	{
+	width:100%;
+	background-color:#4caf50;
+	color:white;
+	padding:10px;
+	text-align:center;
+	border:none;
+	border-radius:10px;
+	cursor:pointer;
+	}
+input[type=submit]
+	{
+	background-color:lightblue;
+	}
+@media screen and (max-width:1000px)
+{
+    input[type=text],[type=password],select
+	{
+	width:100%;
+	padding:10px;
+	display:inline-block;
+	margin:0px 0px 20px 0px;
+	border:1px solid black;
+	border-radius:5px;
+	box-sizing:border-box;
+	height:60px;
+	}
+lebel{margin-bottom:0px;font-size:50px;}
+input[type=submit],input[type=button]
+	{
+	height:70px;
+	font-size:60px;
+	width:100%;
+	background-color:#4caf50;
+	color:white;
+	padding:10px;
+	text-align:center;
+	border:none;
+	border-radius:10px;
+	cursor:pointer;
+	margin-bottom:15px;
+	}
+div {width:100%;}
+body{
+background-image:url(project5.jpg);
+background-size:100% 900px;
+    background-repeat:no-repeat;
+}
+}
+</style>
+</head>
+<body>
+<div>
+<form name="myForm" action="payment.html"
+onsubmit="return validateForm()" method="post">
+<lebel for="fname">User Name</lebel>
+<input type="text" name="fname" placeholder="User Name">
+<lebel for="password">PASSWORD</lebel>
+<input type="password" name="password" placeholder="password">
+    <a href="payment.html"><input type="submit" value="Submit" style="font-size:20px;border-radius:10px;background-color:dodgerblue;color:white;text-align:center;width:100%; padding:10px;" value="Log In" width="100%" padding="10px"> </a>
+<a href="signup.html"><input type="button" style="font-size:20px;border-radius:10px;background-color:dodgerblue;color:white;text-align:center;width:100%; padding:10px;" value="Sign Up" width="100%" padding="10px"> </a>
+</form>
+    <script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Username and Password must be filled out");
+        return false;
+    }
+
+}
+</script>
+
+</div>
+</div>
+</body>
+</html>   
